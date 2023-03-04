@@ -59,10 +59,13 @@ function showBooks(book) {
 
     let bookItem = document.createElement('div');
     bookItem.classList.add('book');
+    let thumbnail="";
     if(!book.volumeInfo.imageLinks) {
-        return;
+        thumbnail='https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png';
     }
-    let thumbnail = book.volumeInfo.imageLinks.thumbnail;
+    else {
+        thumbnail = book.volumeInfo.imageLinks.thumbnail;
+    }
     let page = book.volumeInfo.pageCount;
     let publisher = book.volumeInfo.publisher;
     bookItem.innerHTML = `
