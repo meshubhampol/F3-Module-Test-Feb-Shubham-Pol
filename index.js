@@ -59,7 +59,7 @@ function searchResults(event) {
                 let min=date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();
                 let suff= date.getHours() > 12 ? 'PM':'AM';
                 let day = date.getDate() < 10 ? '0'+date.getDate() : date.getDate();
-                let month = date.getMonth() < 10 ? '0'+date.getMonth() : date.getMonth();
+                let month = date.getMonth()+1 < 10 ? '0'+parseInt(date.getMonth()+1) : date.getMonth()+1;
                 let year = date.getFullYear();
                 
                 // storing query in local Storage
