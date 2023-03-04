@@ -33,10 +33,8 @@ fetch(url).then((response) => response.json()).then(
             mapData();
         }
         let rows = document.getElementsByClassName('item-row');
-        console.log(rows[0]);
         for (let i = 0; i < rows.length; i++) {
             rows[i].addEventListener('click', () => {
-                console.log(i);
                 localStorage.setItem('index', JSON.stringify(i));
                 window.location.reload();
             })

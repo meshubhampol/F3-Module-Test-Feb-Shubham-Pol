@@ -1,7 +1,10 @@
 let container = document.getElementById('result-table');
 
 let historyData = JSON.parse(localStorage.getItem('history'));
-
+if(!historyData) {
+    alert('No Search History Available');
+    window.location.assign('./index.html');
+}
 let sr=1;
 historyData.map((item) => {
     let row = document.createElement('div');
