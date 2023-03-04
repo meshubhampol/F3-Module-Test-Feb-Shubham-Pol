@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div>Book Store App</div>
+    </div>
+    <div class="form-container">
+        <form>
+            <div>Search For Books By Their Name / Author Name</div>
+            <input type="text" placeholder="Search..." id="input">
+            <i class="fa fa-sharp fa-solid fa-magnifying-glass"></i>
+            <div class="buttons">
+                <button id="search" class="search">Search Now!</button>
+                <button id="history" class="history">Search History!</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="result-section" id="result-section">
+        <div id="search-text"></div>
+        <div id="result-container">
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+
+</html>
