@@ -110,6 +110,9 @@ function showBooks(book) {
 
     let container = document.createElement('div');
     container.classList.add('book');
+    if(!book.volumeInfo.imageLinks) {
+        return;
+    }
     let thumbnail = book.volumeInfo.imageLinks.thumbnail;
     let page = book.volumeInfo.pageCount;
     let publisher = book.volumeInfo.publisher;
