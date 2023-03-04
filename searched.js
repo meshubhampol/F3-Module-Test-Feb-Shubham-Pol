@@ -23,7 +23,7 @@ fetch(url).then((response) => response.json()).then(
         row.classList.add('item-row');
         row.innerHTML = `
             <div>${sr++}. ${item.query}</div>
-            <div>Searcheed On: ${item.date} at ${item.time}</div>`
+            <div>Searched On: ${item.date} at ${item.time}</div>`
         container.appendChild(row);
 
         if (sr - 2 === index) {

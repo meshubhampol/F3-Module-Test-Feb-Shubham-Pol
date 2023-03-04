@@ -11,7 +11,7 @@ historyData.map((item) => {
     row.classList.add('item-row');
     row.innerHTML = `
         <div>${sr++}. ${item.query}</div>
-        <div>Searcheed On: ${item.date} at ${item.time}</div>`
+        <div>Searched On: ${item.date} at ${item.time}</div>`
     container.appendChild(row);
 });
 
