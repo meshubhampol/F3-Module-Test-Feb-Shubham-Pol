@@ -59,6 +59,9 @@ function showBooks(book) {
 
     let bookItem = document.createElement('div');
     bookItem.classList.add('book');
+    if(!book.volumeInfo.imageLinks) {
+        return;
+    }
     let thumbnail = book.volumeInfo.imageLinks.thumbnail;
     let page = book.volumeInfo.pageCount;
     let publisher = book.volumeInfo.publisher;
