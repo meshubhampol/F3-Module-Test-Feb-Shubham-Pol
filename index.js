@@ -53,6 +53,9 @@ function searchResults(event) {
                 // fetching current date and time
                 let date= new Date();
                 let hours= date.getHours()%12 < 10 ? '0'+ (date.getHours()%12) : date.getHours()%12;
+                if(hours == '00') {
+                    hours=12;
+                }
                 let min=date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();
                 let suff= date.getHours() > 12 ? 'PM':'AM';
                 let day = date.getDate() < 10 ? '0'+date.getDate() : date.getDate();
